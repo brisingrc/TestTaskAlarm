@@ -50,13 +50,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		24BAD568239A73C400423111 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		24BAD569239A73D400423111 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +101,6 @@
 				24BAD56B239A73EB00423111 /* View */,
 				24BAD56A239A73E000423111 /* ViewModel */,
 				24BAD569239A73D400423111 /* Service */,
-				24BAD568239A73C400423111 /* Model */,
 			);
 			path = TestTaskAlarm;
 			sourceTree = "<group>";
