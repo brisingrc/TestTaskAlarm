@@ -27,17 +27,17 @@ class DetailViewController: UIViewController {
         formatter.dateFormat = "HH:mm"
         nameTextField.text = "alarm"
         subscribe()
-        customeUI()
+        customeUI(button: saveButton)
         assignbackground()
     }
     
-    func customeUI() {
-        saveButton.layer.cornerRadius = 15/// радиус закругления закругление
-        saveButton.layer.borderWidth = 2   // толщина обводки
-        saveButton.backgroundColor = UIColor.black
-        saveButton.clipsToBounds = true
-        saveButton.isEnabled = true
-        saveButton.tintColor = UIColor.white
+    func customeUI(button: UIButton) {
+        button.layer.cornerRadius = 15/// радиус закругления закругление
+        button.layer.borderWidth = 2   // толщина обводки
+        button.backgroundColor = UIColor.black
+        button.clipsToBounds = true
+        button.isEnabled = true
+        button.tintColor = UIColor.white
     }
     
     func subscribe() {
@@ -54,17 +54,10 @@ class DetailViewController: UIViewController {
             vm.alarmName.onNext(text ?? "Alarm")
         }, onError: nil, onCompleted: nil, onDisposed: nil)
     }
-    func assignbackground() {
-        let background = UIImage(named: "background")
-        var imageView : UIImageView!
-        imageView = UIImageView(frame: view.bounds)
-      imageView.contentMode =  UIView.ContentMode.scaleAspectFill
-        imageView.clipsToBounds = true
-        imageView.image = background
-        imageView.center = view.center
-        imageView.alpha = 0.5
-        view.addSubview(imageView)
-        self.view.sendSubviewToBack(imageView)
-    }
+     func assignbackground() {
+           if let background = UIImage(named: "background") {
+               self.view.backgroundColor = UIColor(patternImage: background)
+           }
+       }
 
 }
