@@ -45,19 +45,19 @@ class DetailViewController: UIViewController {
         _ = datePicker.rx.date.subscribe(onNext: { date in
             print(date)
             UserDefaults.standard.setValue(date, forKey: "alarm")
-           UserDefaults.standard.setValue(self.nameTextField.text, forKey: "name")
+            UserDefaults.standard.setValue(self.nameTextField.text, forKey: "name")
             vm.date.onNext(self.formatter.string(from: date))
-       ScheduleNotification.shared.scheduleNotification(notifaicationType: self.nameTextField.text!, date: date)
+            ScheduleNotification.shared.scheduleNotification(notifaicationType: self.nameTextField.text!, date: date)
             
         }, onError: nil, onCompleted: nil, onDisposed: nil)
         _ = nameTextField.rx.text.subscribe(onNext: { text in
             vm.alarmName.onNext(text ?? "Alarm")
         }, onError: nil, onCompleted: nil, onDisposed: nil)
     }
-     func assignbackground() {
-           if let background = UIImage(named: "background") {
-               self.view.backgroundColor = UIColor(patternImage: background)
-           }
-       }
-
+    func assignbackground() {
+        if let background = UIImage(named: "background") {
+            self.view.backgroundColor = UIColor(patternImage: background)
+        }
+    }
+    
 }

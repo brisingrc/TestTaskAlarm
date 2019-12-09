@@ -14,13 +14,13 @@ class FirstViewController: UIViewController {
     var vm = ViewModel()
     @IBOutlet weak var timeTextField: UITextField!
     @IBOutlet weak var nameAlarm: UILabel!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         checkUserDefaults()
         addGestureRecognizer(label: timeTextField)
         bindUI()
-       assignbackground()
+        assignbackground()
         checkName()
     }
     
@@ -31,22 +31,22 @@ class FirstViewController: UIViewController {
     
     func addGestureRecognizer(label: UITextField) {
         let tap = UITapGestureRecognizer(target: self, action: #selector(FirstViewController.tapFunction))
-            timeTextField.isUserInteractionEnabled = true
-            timeTextField.addGestureRecognizer(tap)
-        }
-
-        @objc func tapFunction(sender:UITapGestureRecognizer) {
-            performSegue(withIdentifier: "toDetail", sender: self)
-        }
-        
+        timeTextField.isUserInteractionEnabled = true
+        timeTextField.addGestureRecognizer(tap)
+    }
+    
+    @objc func tapFunction(sender:UITapGestureRecognizer) {
+        performSegue(withIdentifier: "toDetail", sender: self)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetail" {
             if let detailViewController = segue.destination as? DetailViewController {
                 detailViewController.vm = vm.viewModel //Or pass any values
-                    }
+            }
         }
     }
-
+    
     
     func checkUserDefaults() {
         guard let date = UserDefaults.standard.object(forKey: "alarm") else {
@@ -69,8 +69,8 @@ class FirstViewController: UIViewController {
         }
     }
     
-        
-    }
+    
+}
 
 
 
