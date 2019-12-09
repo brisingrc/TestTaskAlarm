@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m8G-wS-Vcx">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!-- Будильник-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="TestTaskAlarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="00:00" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8oz-hV-u05">
+                                <rect key="frame" x="92" y="183" width="191" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="2DA-OL-ACk"/>
+                                    <constraint firstAttribute="height" constant="62" id="xXD-42-tHU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="70"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя будильника" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1EF-aC-ylP">
+                                <rect key="frame" x="92" y="136" width="191" height="31"/>
+                                <color key="tintColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Fcx-MA-7fe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8oz-hV-u05" firstAttribute="top" secondItem="1EF-aC-ylP" secondAttribute="bottom" constant="16" id="4y4-lH-mSt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1EF-aC-ylP" secondAttribute="trailing" constant="92" id="Jqk-Zh-Ozc"/>
+                            <constraint firstItem="8oz-hV-u05" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="Pgd-mK-9lS"/>
+                            <constraint firstItem="1EF-aC-ylP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="92" id="QJK-He-I06"/>
+                            <constraint firstItem="1EF-aC-ylP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="Rwm-Pf-hdF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title=" Будильник" id="ky8-qg-lkB"/>
+                    <connections>
+                        <outlet property="nameAlarm" destination="1EF-aC-ylP" id="2PC-P6-ftx"/>
+                        <outlet property="timeTextField" destination="8oz-hV-u05" id="iaQ-ha-QAZ"/>
+                        <segue destination="t24-eS-iYQ" kind="show" identifier="toDetail" id="bTA-H1-gPO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040.8" y="116.49175412293854"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="LlN-Hj-izH">
+            <objects>
+                <viewController id="t24-eS-iYQ" customClass="DetailViewController" customModule="TestTaskAlarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0nd-Dr-5gG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qhQ-RT-IPY">
+                                <rect key="frame" x="0.0" y="192" width="375" height="216"/>
+                                <locale key="locale" localeIdentifier="kk_KZ"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbx-zW-vWq">
+                                <rect key="frame" x="130" y="426" width="118" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="c7X-mF-EZq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="118" id="q9Q-WH-6oA"/>
+                                </constraints>
+                                <state key="normal" title="Сохранить"/>
+                                <connections>
+                                    <action selector="saveAlarm:" destination="t24-eS-iYQ" eventType="touchUpInside" id="jGp-zF-Swx"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Мой будильник" borderStyle="roundedRect" placeholder="Название" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f81-Bf-oMC">
+                                <rect key="frame" x="16" y="126" width="343" height="34"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="E38-h9-eg0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rbx-zW-vWq" firstAttribute="top" secondItem="qhQ-RT-IPY" secondAttribute="bottom" constant="18" id="5PV-7K-AHt"/>
+                            <constraint firstItem="xwu-GF-p7f" firstAttribute="trailing" secondItem="rbx-zW-vWq" secondAttribute="trailing" constant="127" id="68a-4n-REm"/>
+                            <constraint firstItem="xwu-GF-p7f" firstAttribute="trailing" secondItem="f81-Bf-oMC" secondAttribute="trailing" constant="16" id="69T-3o-oUC"/>
+                            <constraint firstItem="f81-Bf-oMC" firstAttribute="top" secondItem="xwu-GF-p7f" secondAttribute="top" constant="82" id="7at-3f-eza"/>
+                            <constraint firstItem="qhQ-RT-IPY" firstAttribute="leading" secondItem="xwu-GF-p7f" secondAttribute="leading" id="DlQ-Nj-u5p"/>
+                            <constraint firstItem="qhQ-RT-IPY" firstAttribute="trailing" secondItem="xwu-GF-p7f" secondAttribute="trailing" id="TCY-kb-fRM"/>
+                            <constraint firstItem="qhQ-RT-IPY" firstAttribute="top" secondItem="f81-Bf-oMC" secondAttribute="bottom" constant="32" id="VwO-l2-C6I"/>
+                            <constraint firstItem="f81-Bf-oMC" firstAttribute="leading" secondItem="xwu-GF-p7f" secondAttribute="leading" constant="16" id="fop-0h-m0z"/>
+                            <constraint firstItem="rbx-zW-vWq" firstAttribute="leading" secondItem="xwu-GF-p7f" secondAttribute="leading" constant="130" id="ldy-ft-Cjv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xwu-GF-p7f"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jSm-t0-2Va"/>
+                    <connections>
+                        <outlet property="datePicker" destination="qhQ-RT-IPY" id="AFJ-Fi-w4I"/>
+                        <outlet property="nameTextField" destination="f81-Bf-oMC" id="EyH-af-M8g"/>
+                        <outlet property="saveButton" destination="rbx-zW-vWq" id="x0r-eW-pDp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ICQ-17-ALO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1868" y="113.79310344827587"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2In-fw-sVx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m8G-wS-Vcx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9tW-cp-OZh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="H25-aE-qSM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zNi-ah-6l0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>

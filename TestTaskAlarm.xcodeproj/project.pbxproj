@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2484BC5A239A7D0F00BEE97E /* DetailVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2484BC59239A7D0F00BEE97E /* DetailVCViewModel.swift */; };
+		24BAD567239A69F800423111 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BAD566239A69F800423111 /* DetailViewController.swift */; };
+		24BAD56D239A743100423111 /* ScheduleDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BAD56C239A743100423111 /* ScheduleDate.swift */; };
 		24D70BB6239A552900CCC6FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D70BB5239A552900CCC6FD /* AppDelegate.swift */; };
 		24D70BB8239A552900CCC6FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D70BB7239A552900CCC6FD /* SceneDelegate.swift */; };
-		24D70BBA239A552900CCC6FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D70BB9239A552900CCC6FD /* ViewController.swift */; };
+		24D70BBA239A552900CCC6FD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D70BB9239A552900CCC6FD /* FirstViewController.swift */; };
 		24D70BBD239A552900CCC6FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D70BBB239A552900CCC6FD /* Main.storyboard */; };
 		24D70BBF239A552F00CCC6FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D70BBE239A552F00CCC6FD /* Assets.xcassets */; };
 		24D70BC2239A552F00CCC6FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D70BC0239A552F00CCC6FD /* LaunchScreen.storyboard */; };
+		24D70BCA239A58D200CCC6FD /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D70BC9239A58D100CCC6FD /* ViewModel.swift */; };
+		E8D0A1111E359F4CAFE1C2D1 /* Pods_TestTaskAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68C4AA376A16D6C28277D26 /* Pods_TestTaskAlarm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17AD9B975F087D7E83E73983 /* Pods-TestTaskAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskAlarm.release.xcconfig"; path = "Target Support Files/Pods-TestTaskAlarm/Pods-TestTaskAlarm.release.xcconfig"; sourceTree = "<group>"; };
+		2484BC59239A7D0F00BEE97E /* DetailVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVCViewModel.swift; sourceTree = "<group>"; };
+		24BAD566239A69F800423111 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		24BAD56C239A743100423111 /* ScheduleDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDate.swift; sourceTree = "<group>"; };
 		24D70BB2239A552900CCC6FD /* TestTaskAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D70BB5239A552900CCC6FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24D70BB7239A552900CCC6FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		24D70BB9239A552900CCC6FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24D70BB9239A552900CCC6FD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		24D70BBC239A552900CCC6FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24D70BBE239A552F00CCC6FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24D70BC1239A552F00CCC6FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24D70BC3239A552F00CCC6FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D70BC9239A58D100CCC6FD /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		83C1EDF920A4F285B9CAE980 /* Pods-TestTaskAlarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskAlarm.debug.xcconfig"; path = "Target Support Files/Pods-TestTaskAlarm/Pods-TestTaskAlarm.debug.xcconfig"; sourceTree = "<group>"; };
+		D68C4AA376A16D6C28277D26 /* Pods_TestTaskAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTaskAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8D0A1111E359F4CAFE1C2D1 /* Pods_TestTaskAlarm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24BAD568239A73C400423111 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24BAD569239A73D400423111 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				24BAD56C239A743100423111 /* ScheduleDate.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		24BAD56A239A73E000423111 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				24D70BC9239A58D100CCC6FD /* ViewModel.swift */,
+				2484BC59239A7D0F00BEE97E /* DetailVCViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		24BAD56B239A73EB00423111 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24D70BB9239A552900CCC6FD /* FirstViewController.swift */,
+				24BAD566239A69F800423111 /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		24D70BA9239A552900CCC6FD = {
 			isa = PBXGroup;
 			children = (
 				24D70BB4239A552900CCC6FD /* TestTaskAlarm */,
 				24D70BB3239A552900CCC6FD /* Products */,
+				9C365AB592A3E0D074644747 /* Pods */,
+				9AE9A158C68ACC11B894688F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +104,43 @@
 		24D70BB4239A552900CCC6FD /* TestTaskAlarm */ = {
 			isa = PBXGroup;
 			children = (
+				3941F586239D20720031FE45 /* Supporting Files */,
+				24BAD56B239A73EB00423111 /* View */,
+				24BAD56A239A73E000423111 /* ViewModel */,
+				24BAD569239A73D400423111 /* Service */,
+				24BAD568239A73C400423111 /* Model */,
+			);
+			path = TestTaskAlarm;
+			sourceTree = "<group>";
+		};
+		3941F586239D20720031FE45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				24D70BB5239A552900CCC6FD /* AppDelegate.swift */,
 				24D70BB7239A552900CCC6FD /* SceneDelegate.swift */,
-				24D70BB9239A552900CCC6FD /* ViewController.swift */,
 				24D70BBB239A552900CCC6FD /* Main.storyboard */,
 				24D70BBE239A552F00CCC6FD /* Assets.xcassets */,
 				24D70BC0239A552F00CCC6FD /* LaunchScreen.storyboard */,
 				24D70BC3239A552F00CCC6FD /* Info.plist */,
 			);
-			path = TestTaskAlarm;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AE9A158C68ACC11B894688F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D68C4AA376A16D6C28277D26 /* Pods_TestTaskAlarm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C365AB592A3E0D074644747 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83C1EDF920A4F285B9CAE980 /* Pods-TestTaskAlarm.debug.xcconfig */,
+				17AD9B975F087D7E83E73983 /* Pods-TestTaskAlarm.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24D70BC6239A552F00CCC6FD /* Build configuration list for PBXNativeTarget "TestTaskAlarm" */;
 			buildPhases = (
+				D6F846B655C96FB04F08A799 /* [CP] Check Pods Manifest.lock */,
 				24D70BAE239A552900CCC6FD /* Sources */,
 				24D70BAF239A552900CCC6FD /* Frameworks */,
 				24D70BB0239A552900CCC6FD /* Resources */,
+				9247BAB0599A22F61C0896CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +211,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9247BAB0599A22F61C0896CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestTaskAlarm/Pods-TestTaskAlarm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestTaskAlarm/Pods-TestTaskAlarm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6F846B655C96FB04F08A799 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestTaskAlarm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		24D70BAE239A552900CCC6FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24D70BBA239A552900CCC6FD /* ViewController.swift in Sources */,
+				24BAD56D239A743100423111 /* ScheduleDate.swift in Sources */,
+				24D70BBA239A552900CCC6FD /* FirstViewController.swift in Sources */,
+				2484BC5A239A7D0F00BEE97E /* DetailVCViewModel.swift in Sources */,
 				24D70BB6239A552900CCC6FD /* AppDelegate.swift in Sources */,
+				24BAD567239A69F800423111 /* DetailViewController.swift in Sources */,
+				24D70BCA239A58D200CCC6FD /* ViewModel.swift in Sources */,
 				24D70BB8239A552900CCC6FD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,11 +415,12 @@
 		};
 		24D70BC7239A552F00CCC6FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83C1EDF920A4F285B9CAE980 /* Pods-TestTaskAlarm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KB5RUBFJK;
-				INFOPLIST_FILE = TestTaskAlarm/Info.plist;
+				INFOPLIST_FILE = "TestTaskAlarm/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,17 +428,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kaisheng.TestTaskAlarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		24D70BC8239A552F00CCC6FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17AD9B975F087D7E83E73983 /* Pods-TestTaskAlarm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KB5RUBFJK;
-				INFOPLIST_FILE = TestTaskAlarm/Info.plist;
+				INFOPLIST_FILE = "TestTaskAlarm/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +447,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kaisheng.TestTaskAlarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
