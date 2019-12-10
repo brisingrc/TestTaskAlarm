@@ -14,10 +14,8 @@ class ViewModel {
     var viewModel = DetailVCViewModel()
     var date = PublishSubject<String>()
     var alarmName = PublishSubject<String>()
-    var alarmModel = PublishSubject<AlarmModel>()
     init() {
-        _ = viewModel.alarmModel.subscribe(onNext: { alarmModel in
-            self.alarmModel.onNext(alarmModel)
+        _ = viewModel.alarmModel.subscribe(onNext:{ alarmModel in
             self.date.onNext(alarmModel.date)
             self.alarmName.onNext(alarmModel.alarmName)
         }, onError: nil, onCompleted: nil, onDisposed: nil)

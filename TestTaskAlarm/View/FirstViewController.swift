@@ -50,12 +50,15 @@ class FirstViewController: UIViewController {
     
     
     func checkUserDefaults() {
-        guard let date = UserDefaults.standard.object(forKey: "alarm") else {
+        guard let alarmName = UserDefaults.standard.string(forKey: "name") else { return }
+        guard let date = UserDefaults.standard.string(forKey: alarmName) else {
             print("Nothing in UserDefauls")
             timeTextField.text = "00:00"; return}
-        let formatter = DateFormatter()
-        formatter.dateFormat = "HH:mm"
-        timeTextField.text = formatter.string(from: date as! Date)
+        nameAlarm.text = alarmName
+//        let formatter = DateFormatter()
+//        formatter.dateFormat = "HH:mm"
+        timeTextField.text = date
+//            formatter.string(from: date as! Date)
     }
     
     func checkName(){
