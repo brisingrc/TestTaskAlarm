@@ -12,6 +12,7 @@ import RxCocoa
 
 class FirstViewController: UIViewController {
     var vm = ViewModel()
+    var alarmModel: AlarmModel?
     @IBOutlet weak var timeTextField: UITextField!
     @IBOutlet weak var nameAlarm: UILabel!
     
@@ -26,7 +27,7 @@ class FirstViewController: UIViewController {
     
     func bindUI() {
         _ = vm.date.bind(to: timeTextField.rx.text)
-        _ = vm.alarmNme.bind(to: nameAlarm.rx.text)
+        _ = vm.alarmName.bind(to: nameAlarm.rx.text)
     }
     
     func addGestureRecognizer(label: UITextField) {

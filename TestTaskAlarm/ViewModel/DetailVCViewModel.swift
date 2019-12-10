@@ -9,7 +9,6 @@
 import Foundation
 import RxSwift
 class DetailVCViewModel {
-    var date = PublishSubject<String>()
-    var alarmName = PublishSubject<String>()
+    var alarmModel = PublishSubject<AlarmModel>()
 }
 

@@ -13,14 +13,13 @@ import RxCocoa
 class ViewModel {
     var viewModel = DetailVCViewModel()
     var date = PublishSubject<String>()
-    var alarmNme = PublishSubject<String>()
+    var alarmName = PublishSubject<String>()
+    var alarmModel = PublishSubject<AlarmModel>()
     init() {
-        _ = viewModel.date.subscribe(onNext: { date in
-            print(date)
-            self.date.onNext(date)
-        }, onError: nil, onCompleted: nil, onDisposed: nil)
-        _ = viewModel.alarmName.subscribe(onNext: { name in
-            self.alarmNme.onNext(name)
+        _ = viewModel.alarmModel.subscribe(onNext: { alarmModel in
+            self.alarmModel.onNext(alarmModel)
+            self.date.onNext(alarmModel.date)
+            self.alarmName.onNext(alarmModel.alarmName)
         }, onError: nil, onCompleted: nil, onDisposed: nil)
     }
 }

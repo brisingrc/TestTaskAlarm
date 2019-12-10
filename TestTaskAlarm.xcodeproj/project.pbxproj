@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2484BC5A239A7D0F00BEE97E /* DetailVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2484BC59239A7D0F00BEE97E /* DetailVCViewModel.swift */; };
+		24861702239F3DAD006B713C /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24861701239F3DAD006B713C /* AlarmModel.swift */; };
 		24BAD567239A69F800423111 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BAD566239A69F800423111 /* DetailViewController.swift */; };
 		24BAD56D239A743100423111 /* ScheduleDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BAD56C239A743100423111 /* ScheduleDate.swift */; };
 		24D70BB6239A552900CCC6FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D70BB5239A552900CCC6FD /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		17AD9B975F087D7E83E73983 /* Pods-TestTaskAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskAlarm.release.xcconfig"; path = "Target Support Files/Pods-TestTaskAlarm/Pods-TestTaskAlarm.release.xcconfig"; sourceTree = "<group>"; };
 		2484BC59239A7D0F00BEE97E /* DetailVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVCViewModel.swift; sourceTree = "<group>"; };
+		24861701239F3DAD006B713C /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
 		24BAD566239A69F800423111 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		24BAD56C239A743100423111 /* ScheduleDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDate.swift; sourceTree = "<group>"; };
 		24D70BB2239A552900CCC6FD /* TestTaskAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24861700239F3CA6006B713C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24861701239F3DAD006B713C /* AlarmModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		24BAD569239A73D400423111 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		24D70BB4239A552900CCC6FD /* TestTaskAlarm */ = {
 			isa = PBXGroup;
 			children = (
+				24861700239F3CA6006B713C /* Model */,
 				3941F586239D20720031FE45 /* Supporting Files */,
 				24BAD56B239A73EB00423111 /* View */,
 				24BAD56A239A73E000423111 /* ViewModel */,
@@ -266,6 +277,7 @@
 				24BAD567239A69F800423111 /* DetailViewController.swift in Sources */,
 				24D70BCA239A58D200CCC6FD /* ViewModel.swift in Sources */,
 				24D70BB8239A552900CCC6FD /* SceneDelegate.swift in Sources */,
+				24861702239F3DAD006B713C /* AlarmModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

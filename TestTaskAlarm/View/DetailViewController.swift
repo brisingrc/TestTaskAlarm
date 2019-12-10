@@ -46,12 +46,14 @@ class DetailViewController: UIViewController {
             print(date)
             UserDefaults.standard.setValue(date, forKey: "alarm")
             UserDefaults.standard.setValue(self.nameTextField.text, forKey: "name")
-            vm.date.onNext(self.formatter.string(from: date))
+            vm.alarmModel.onNext(AlarmModel(date: self.formatter.string(from: date), alarmName: self.nameTextField.text ?? "alarm"))
             ScheduleNotification.shared.scheduleNotification(notifaicationType: self.nameTextField.text!, date: date)
             
         }, onError: nil, onCompleted: nil, onDisposed: nil)
+        
         _ = nameTextField.rx.text.subscribe(onNext: { text in
-            vm.alarmName.onNext(text ?? "Alarm")
+            vm.alarmModel.onNext(AlarmModel(date: self.formatter.string(from: self.datePicker.date), alarmName: text ?? "alarm"))
+            
         }, onError: nil, onCompleted: nil, onDisposed: nil)
     }
     func assignbackground() {
